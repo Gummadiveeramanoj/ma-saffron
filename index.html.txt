@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saforan - Premium Saffron</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 flex justify-between items-center sticky top-0 z-50 rounded-b-lg">
+        <div class="text-2xl font-bold text-red-700">Saforan</div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="#home" class="text-gray-700 hover:text-red-700 font-medium rounded-md px-3 py-2 transition duration-300">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-red-700 font-medium rounded-md px-3 py-2 transition duration-300">About Us</a>
+            <a href="#products" class="text-gray-700 hover:text-red-700 font-medium rounded-md px-3 py-2 transition duration-300">Products</a>
+            <a href="#benefits" class="text-gray-700 hover:text-red-700 font-medium rounded-md px-3 py-2 transition duration-300">Benefits</a>
+            <a href="#contact" class="text-gray-700 hover:text-red-700 font-medium rounded-md px-3 py-2 transition duration-300">Contact</a>
+        </nav>
+        <button class="md:hidden text-gray-700 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </header>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md py-4 px-6 rounded-b-lg">
+        <nav class="flex flex-col space-y-4">
+            <a href="#home" class="text-gray-700 hover:text-red-700 font-medium rounded-md px-3 py-2 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-red-700 font-medium rounded-md px-3 py-2 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About Us</a>
+            <a href="#products" class="text-gray-700 hover:text-red-700 font-medium rounded-md px-3 py-2 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Products</a>
+            <a href="#benefits" class="text-gray-700 hover:text-red-700 font-medium rounded-md px-3 py-2 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Benefits</a>
+            <a href="#contact" class="text-gray-700 hover:text-red-700 font-medium rounded-md px-3 py-2 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        </nav>
+    </div>
+
+    <section id="home" class="relative bg-gradient-to-r from-red-800 to-red-600 text-white py-20 md:py-32 overflow-hidden rounded-b-xl shadow-lg">
+        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://placehold.co/1920x1080/8B0000/FFFFFF?text=Saffron+Background');"></div>
+        <div class="container mx-auto px-6 md:px-12 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-md">
+                Experience the Golden Touch of Saforan
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto drop-shadow-sm">
+                Discover the finest quality saffron, hand-picked and carefully processed to bring you unparalleled aroma, flavor, and health benefits.
+            </p>
+            <a href="#products" class="inline-block bg-white text-red-700 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Explore Our Products
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-white rounded-xl shadow-md mx-4 md:mx-auto my-8 max-w-6xl">
+        <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-10">
+            <div class="md:w-1/2 flex justify-center">
+                <img src="files/uploaded:my pic 2025.jpg-00c99449-737e-4622-a21b-7d42bc6c3a63" 
+                     alt="About Saforan Owner - Gummadi Veera manoj" 
+                     class="rounded-xl shadow-lg w-full max-w-sm h-auto object-cover border-4 border-red-200"
+                     onerror="this.onerror=null; this.src='https://placehold.co/400x400/D4A762/FFFFFF?text=Owner+Image+Missing';">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-red-700 mb-6">Our Commitment to Quality</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    At Saforan, we are dedicated to sourcing the purest saffron threads directly from the most renowned farms. Our saffron is cultivated with traditional methods, ensuring each delicate stigma retains its vibrant color, intense aroma, and powerful properties.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    We believe in transparency and sustainability, bringing you a product that is not only exceptional in quality but also ethically produced. From our fields to your kitchen, expect nothing but the best.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-16 md:py-24 bg-red-50 rounded-xl shadow-md mx-4 md:mx-auto my-8 max-w-6xl">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-red-700 mb-12">Our Premium Saffron Selection</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 border border-red-100">
+                    <img src="https://placehold.co/300x200/F05252/FFFFFF?text=Saffron+Threads" alt="Saffron Threads" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold text-red-700 mb-3">Pure Saffron Threads</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our signature product, hand-picked and carefully dried to preserve its natural potency and aroma. Perfect for culinary masterpieces.
+                    </p>
+                    <span class="text-xl font-bold text-red-800">₹2075 / gram</span>
+                    <button class="mt-6 bg-red-700 text-white py-3 px-6 rounded-full hover:bg-red-800 transition duration-300 shadow-md">
+                        View Product Details
+                    </button>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 border border-red-100">
+                    <img src="https://placehold.co/300x200/D4A762/FFFFFF?text=Saffron+Powder" alt="Saffron Powder" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold text-red-700 mb-3">Finely Ground Saffron Powder</h3>
+                    <p class="text-gray-600 mb-4">
+                        Convenient and ready to use, our saffron powder offers the same rich flavor and color for easy integration into your recipes.
+                    </p>
+                    <span class="text-xl font-bold text-red-800">₹1660 / 0.5 grams</span>
+                    <button class="mt-6 bg-red-700 text-white py-3 px-6 rounded-full hover:bg-red-800 transition duration-300 shadow-md">
+                        View Product Details
+                    </button>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 border border-red-100">
+                    <img src="https://placehold.co/300x200/F05252/FFFFFF?text=Saffron+Gift+Set" alt="Saffron Gift Set" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold text-red-700 mb-3">Saffron Gift Sets</h3>
+                    <p class="text-gray-600 mb-4">
+                        A luxurious gift for connoisseurs. Our beautifully packaged sets include premium saffron and a guide to its uses.
+                    </p>
+                    <span class="text-xl font-bold text-red-800">Starting from ₹4150</span>
+                    <button class="mt-6 bg-red-700 text-white py-3 px-6 rounded-full hover:bg-red-800 transition duration-300 shadow-md">
+                        View Product Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-16 md:py-24 bg-white rounded-xl shadow-md mx-4 md:mx-auto my-8 max-w-6xl">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-red-700 mb-12">The Remarkable Benefits of Saffron</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-red-50 p-6 rounded-xl shadow-md border border-red-100">
+                    <div class="text-5xl text-red-700 mb-4">✨</div> <h3 class="text-xl font-semibold text-red-700 mb-3">Culinary Delight</h3>
+                    <p class="text-gray-600">
+                        Adds a distinctive aroma, rich flavor, and beautiful golden hue to dishes like paella, biryani, and desserts.
+                    </p>
+                    <button class="mt-4 bg-red-600 text-white py-2 px-5 rounded-full hover:bg-red-700 transition duration-300 text-sm" onclick="openBenefitModal('Culinary Delight')">
+                        Learn More ✨
+                    </button>
+                </div>
+
+                <div class="bg-red-50 p-6 rounded-xl shadow-md border border-red-100">
+                    <div class="text-5xl text-red-700 mb-4">🌿</div> <h3 class="text-xl font-semibold text-red-700 mb-3">Health & Wellness</h3>
+                    <p class="text-gray-600">
+                        Known for its antioxidant properties, saffron can support mood, vision, and overall well-being.
+                    </p>
+                    <button class="mt-4 bg-red-600 text-white py-2 px-5 rounded-full hover:bg-red-700 transition duration-300 text-sm" onclick="openBenefitModal('Health & Wellness')">
+                        Learn More ✨
+                    </button>
+                </div>
+
+                <div class="bg-red-50 p-6 rounded-xl shadow-md border border-red-100">
+                    <div class="text-5xl text-red-700 mb-4">🌸</div> <h3 class="text-xl font-semibold text-red-700 mb-3">Beauty & Skincare</h3>
+                    <p class="text-gray-600">
+                        Used in traditional remedies for its skin-enhancing properties, promoting a radiant complexion.
+                    </p>
+                    <button class="mt-4 bg-red-600 text-white py-2 px-5 rounded-full hover:bg-red-700 transition duration-300 text-sm" onclick="openBenefitModal('Beauty & Skincare')">
+                        Learn More ✨
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-red-700 text-white py-16 md:py-20 rounded-xl shadow-lg mx-4 md:mx-auto my-8 max-w-6xl">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Experience the Difference?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Join countless satisfied customers who have elevated their culinary creations and well-being with Saforan's premium saffron.
+            </p>
+            <a href="#contact" class="inline-block bg-white text-red-700 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-red-50 rounded-xl shadow-md mx-4 md:mx-auto my-8 max-w-6xl">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-red-700 mb-12">Contact Us</h2>
+
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-red-100">
+                <p class="text-lg text-gray-700 mb-6">
+                    Have questions or want to place a bulk order? We'd love to hear from you!
+                </p>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-left text-gray-700 text-sm font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-left text-gray-700 text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200" placeholder="your.email@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-left text-gray-700 text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-red-700 text-white py-3 px-6 rounded-full hover:bg-red-800 transition duration-300 shadow-md font-semibold">
+                        Send Message
+                    </button>
+                </form>
+                <div class="mt-8 text-gray-600">
+                    <p>Email: <a href="mailto:gummadiveeramanoj@gmail.com" class="text-red-700 hover:underline">gummadiveeramanoj@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+919848871919" class="text-red-700 hover:underline">+91 9848871919</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-red-800 text-white py-8 rounded-t-xl shadow-inner">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <p>&copy; 2025 Saforan. All rights reserved. | Owned by Gummadi Veera manoj</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-white hover:text-red-200 transition duration-300">Facebook</a>
+                <a href="#" class="text-white hover:text-red-200 transition duration-300">Instagram</a>
+                <a href="#" class="text-white hover:text-red-200 transition duration-300">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="benefitModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('benefitModal')">&times;</span>
+            <h3 class="text-2xl font-bold text-red-700 mb-4" id="benefitTitle"></h3>
+            <div id="benefitContent" class="text-gray-700 leading-relaxed">
+                <div class="loader" id="benefitLoader"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
